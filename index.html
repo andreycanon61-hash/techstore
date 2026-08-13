@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechStore - Inicio</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="icons/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+    <!-- ===== BARRA 1: Utilidades ===== -->
+    <div class="bg-light border-bottom py-1">
+        <div class="container d-flex flex-wrap justify-content-end gap-3 small text-primary">
+            <span>Televentas: (601) 000 0000</span>
+            <span>Atención al cliente: (601) 000 0000</span>
+            <a href="#envio" class="text-decoration-none text-primary">Rastrea tu pedido</a>
+            <a href="catalogo.html" class="text-decoration-none text-primary">Catálogo</a>
+            <a href="contacto.html" class="text-decoration-none text-primary">PQR</a>
+        </div>
+    </div>
+
+    <!-- ===== BARRA 2: Logo + Buscador + Cuenta/Carrito ===== -->
+    <div class="bg-white py-3 border-bottom">
+        <div class="container d-flex align-items-center gap-3">
+            <a href="index.html" class="navbar-brand fw-bold fs-3 text-primary m-0">
+                <i class="bi bi-pc-display"></i> TechStore
+            </a>
+            <form class="d-flex flex-grow-1" role="search">
+                <div class="input-group">
+                    <span class="input-group-text bg-white"><i class="bi bi-search text-primary"></i></span>
+                    <input class="form-control" type="search" placeholder="¿Qué buscas hoy?">
+                </div>
+            </form>
+            <a href="login.html" class="text-decoration-none text-center text-primary">
+                <i class="bi bi-person fs-4 d-block"></i>
+                <small>Mi cuenta</small>
+            </a>
+            <a href="carrito.html" class="text-decoration-none text-center text-primary position-relative">
+                <i class="bi bi-cart fs-4 d-block"></i>
+                <small>Mi carrito</small>
+                <span class="position-absolute top-0 start-100 translate-middle badge bg-danger">3</span>
+            </a>
+        </div>
+    </div>
+
+    <!-- ===== BARRA 3: Menú de navegación ===== -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom sticky-top">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#categorias" role="button" data-bs-toggle="dropdown">
+                            Categorías
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#categorias">Portátiles</a></li>
+                            <li><a class="dropdown-item" href="#categorias">Escritorio</a></li>
+                            <li><a class="dropdown-item" href="#categorias">Monitores</a></li>
+                            <li><a class="dropdown-item" href="#categorias">Tarjetas gráficas</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="#envio">Rastrea tu envío</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#comocomprar">¿Cómo comprar?</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#tecnofertas">Tecnofertas</a></li>
+                    <li class="nav-item"><a class="nav-link" href="catalogo.html">Catálogo completo</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contacto.html">Contáctanos</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ===== BANNER PRINCIPAL ===== -->
+    <section class="bg-dark text-white text-center py-5">
+        <div class="container py-4">
+            <h1 class="fw-bold display-5">Arma tu PC ideal</h1>
+            <p class="lead text-secondary">Procesadores, tarjetas gráficas y memorias RAM</p>
+            <a href="catalogo.html" class="btn btn-primary btn-lg mt-2 px-4">Explorar componentes</a>
+        </div>
+    </section>
+
+    <!-- ===== CATEGORÍAS ===== -->
+    <section id="categorias" class="py-5">
+        <div class="container">
+            <h3 class="text-center fw-bold mb-4">Categorías</h3>
+            <div class="row g-3 text-center">
+                <div class="col-6 col-md-3">
+                    <div class="card h-100 border p-3">
+                        <i class="bi bi-laptop fs-1 text-primary"></i>
+                        <span class="mt-2 fw-semibold d-block">Portátiles</span>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="card h-100 border p-3">
+                        <i class="bi bi-pc-display fs-1 text-primary"></i>
+                        <span class="mt-2 fw-semibold d-block">Escritorio</span>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="card h-100 border p-3">
+                        <i class="bi bi-display fs-1 text-primary"></i>
+                        <span class="mt-2 fw-semibold d-block">Monitores</span>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="card h-100 border p-3">
+                        <i class="bi bi-cpu fs-1 text-primary"></i>
+                        <span class="mt-2 fw-semibold d-block">Tarjetas gráficas</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== PRODUCTOS DESTACADOS ===== -->
+    <section class="py-4 bg-light">
+        <div class="container">
+            <h3 class="text-center fw-bold mb-4">Productos destacados</h3>
+            <div class="row g-4">
+                <div class="col-12 col-sm-6 col-md-3">
+                    <div class="card h-100 border shadow-sm">
+                        <div class="card-body d-flex flex-column">
+                            <span class="badge bg-danger w-auto mb-2 align-self-start">-15%</span>
+                            <h6 class="card-title">Portátil HP 16GB RAM</h6>
+                            <p class="text-warning mb-1">★★★★☆</p>
+                            <span class="badge bg-success w-auto mb-3">En stock</span>
+                            <p class="fw-bold fs-5 text-primary mb-3">$2.000.000</p>
+                            <button class="btn btn-primary w-100 mt-auto"><i class="bi bi-cart-plus"></i> Agregar</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-3">
+                    <div class="card h-100 border shadow-sm">
+                        <div class="card-body d-flex flex-column">
+                            <h6 class="card-title">Monitor LG 24"</h6>
+                            <p class="text-warning mb-1">★★★★★</p>
+                            <span class="badge bg-success w-auto mb-3">En stock</span>
+                            <p class="fw-bold fs-5 text-primary mb-3">$700.000</p>
+                            <button class="btn btn-primary w-100 mt-auto"><i class="bi bi-cart-plus"></i> Agregar</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-3">
+                    <div class="card h-100 border shadow-sm">
+                        <div class="card-body d-flex flex-column">
+                            <h6 class="card-title">Tarjeta gráfica RTX 4060</h6>
+                            <p class="text-warning mb-1">★★★★★</p>
+                            <span class="badge bg-secondary w-auto mb-3">Agotado</span>
+                            <p class="fw-bold fs-5 text-primary mb-3">$1.800.000</p>
+                            <button class="btn btn-primary w-100 mt-auto disabled"><i class="bi bi-cart-plus"></i> Agregar</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-3">
+                    <div class="card h-100 border shadow-sm">
+                        <div class="card-body d-flex flex-column">
+                            <h6 class="card-title">Disco SSD 1TB</h6>
+                            <p class="text-warning mb-1">★★★★☆</p>
+                            <span class="badge bg-success w-auto mb-3">En stock</span>
+                            <p class="fw-bold fs-5 text-primary mb-3">$350.000</p>
+                            <button class="btn btn-primary w-100 mt-auto"><i class="bi bi-cart-plus"></i> Agregar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== TECNOFERTAS (SECCIÓN SOLICITADA) ===== -->
+    <section id="tecnofertas" class="py-5">
+        <div class="container">
+            <h3 class="text-center fw-bold mb-4">Tecnofertas de la Semana</h3>
+            <div class="row g-3">
+                <div class="col-md-6">
+                    <div class="alert alert-warning border-warning d-flex align-items-center gap-3 m-0" role="alert">
+                        <i class="bi bi-lightning-charge-fill fs-2 text-warning"></i>
+                        <div>
+                            <strong>Tecnofertas:</strong> Hasta 25% de descuento en portátiles seleccionados hasta agotar existencias.
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="alert alert-info border-info d-flex align-items-center gap-3 m-0" role="alert">
+                        <i class="bi bi-truck fs-2 text-info"></i>
+                        <div>
+                            <strong>Envío gratis:</strong> En todas las compras superiores a $500.000 a todo el país.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== RASTREA TU ENVÍO (SECCIÓN SOLICITADA) ===== -->
+    <section id="envio" class="py-5 bg-light">
+        <div class="container" style="max-width: 600px;">
+            <div class="card shadow-sm border-0">
+                <div class="card-body p-4 text-center">
+                    <i class="bi bi-box-seam fs-1 text-primary"></i>
+                    <h4 class="fw-bold my-2">Rastrea tu envío</h4>
+                    <p class="text-muted small mb-4">Ingresa tu número de guía o pedido para conocer el estado actual.</p>
+                    <form class="row g-2">
+                        <div class="col-8">
+                            <input type="text" class="form-control" placeholder="Ej: #10293847" required>
+                        </div>
+                        <div class="col-4">
+                            <button type="submit" class="btn btn-primary w-100">Rastrear</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== ¿CÓMO COMPRAR? (SECCIÓN SOLICITADA) ===== -->
+    <section id="comocomprar" class="py-5">
+        <div class="container">
+            <h3 class="text-center fw-bold mb-4">¿Cómo comprar en TechStore?</h3>
+            <div class="row text-center g-4">
+                <div class="col-md-3">
+                    <div class="p-3">
+                        <span class="badge bg-primary rounded-circle fs-4 mb-2">1</span>
+                        <h5>Elige tus productos</h5>
+                        <p class="text-muted small">Explora el catálogo y agrega los artículos deseados al carrito.</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="p-3">
+                        <span class="badge bg-primary rounded-circle fs-4 mb-2">2</span>
+                        <h5>Revisa tu carrito</h5>
+                        <p class="text-muted small">Verifica cantidades, descuentas y el monto total de tu pedido.</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="p-3">
+                        <span class="badge bg-primary rounded-circle fs-4 mb-2">3</span>
+                        <h5>Realiza el pago</h5>
+                        <p class="text-muted small">Selecciona tu método de pago preferido en una pasarela segura.</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="p-3">
+                        <span class="badge bg-primary rounded-circle fs-4 mb-2">4</span>
+                        <h5>Recibe tu pedido</h5>
+                        <p class="text-muted small">Te enviamos el código de rastreo para monitorear el paquete a tu casa.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== TESTIMONIOS ===== -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <h3 class="text-center fw-bold mb-4">Testimonios</h3>
+            <div class="row g-4 text-center">
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm p-3">
+                        <p class="text-warning">★★★★★</p>
+                        <p class="small text-muted">"Excelente atención y el portátil llegó en perfecto estado."</p>
+                        <strong class="small">- Camila R.</strong>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm p-3">
+                        <p class="text-warning">★★★★★</p>
+                        <p class="small text-muted">"Buenos precios y envío rápido. Volveré a comprar."</p>
+                        <strong class="small">- Daniel M.</strong>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm p-3">
+                        <p class="text-warning">★★★★★</p>
+                        <p class="small text-muted">"Me ayudaron a armar mi PC de escritorio, quedó perfecta."</p>
+                        <strong class="small">- Laura G.</strong>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== NEWSLETTER ===== -->
+    <section class="bg-primary text-white py-5">
+        <div class="container text-center">
+            <h4 class="fw-bold mb-2">Suscríbete a nuestro boletín</h4>
+            <p class="small mb-4">Recibe promociones y novedades de TechStore directamente en tu correo.</p>
+            <form class="row g-2 justify-content-center" style="max-width: 500px; margin: 0 auto;">
+                <div class="col-8">
+                    <input type="email" class="form-control" placeholder="Tu correo electrónico" required>
+                </div>
+                <div class="col-4">
+                    <button type="submit" class="btn btn-warning w-100 fw-bold">Suscribirme</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="bg-dark text-white pt-4 pb-3">
+        <div class="container">
+            <div class="row g-4 small">
+                <div class="col-md-4">
+                    <h6 class="fw-bold text-primary"><i class="bi bi-pc-display"></i> TechStore</h6>
+                    <p class="text-secondary">Tienda de equipos de cómputo dedicada a ofrecer tecnología de calidad con la mejor atención al cliente.</p>
+                </div>
+                <div class="col-md-3">
+                    <h6 class="fw-bold">Enlaces rápidos</h6>
+                    <ul class="list-unstyled text-secondary">
+                        <li><a href="catalogo.html" class="text-decoration-none text-secondary">Catálogo</a></li>
+                        <li><a href="#comocomprar" class="text-decoration-none text-secondary">¿Cómo comprar?</a></li>
+                        <li><a href="nosotros.html" class="text-decoration-none text-secondary">Sobre nosotros</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h6 class="fw-bold">Contacto</h6>
+                    <p class="text-secondary mb-1"><i class="bi bi-geo-alt"></i> Calle 123 #45-67, Tunja</p>
+                    <p class="text-secondary mb-1"><i class="bi bi-telephone"></i> (601) 000 0000</p>
+                    <p class="text-secondary"><i class="bi bi-envelope"></i> contacto@techstore.com</p>
+                </div>
+                <div class="col-md-2">
+                    <h6 class="fw-bold">Medios de pago</h6>
+                    <div class="fs-4 text-secondary d-flex gap-2">
+                        <i class="bi bi-credit-card"></i>
+                        <i class="bi bi-paypal"></i>
+                        <i class="bi bi-cash-coin"></i>
+                    </div>
+                </div>
+            </div>
+            <hr class="border-secondary my-3">
+            <div class="text-center text-secondary small">
+                <p class="m-0">&copy; 2026 TechStore. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
